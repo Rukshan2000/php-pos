@@ -22,10 +22,10 @@
         <li><a href="budget.html"><i class="fas fa-money-bill"></i> Budget</a></li>
         <li><a href="income-costs.html"><i class="fas fa-file-invoice-dollar"></i> Income & Costs</a></li>
         <li><a href="sales.html"><i class="fas fa-chart-line"></i> Sales</a></li>
-        <li><a href="orders.html"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+        <li><a href="orders.html" id="ordersMenuItem"><i class="fas fa-shopping-cart"></i> Orders</a></li>
         <li><a href="customers.html"><i class="fas fa-users"></i> Customer Management</a></li>
         <li><a href="shipment.html"><i class="fas fa-shipping-fast"></i> Shipment & Purchase</a></li>
-        <li><a href="roles.html"><i class="fas fa-user-cog"></i> Role Management</a></li>
+        <li><a href="roles.html" id="rolesMenuItem"><i class="fas fa-user-cog"></i> Role Management</a></li>
       </ul>
       <button id="logout-btn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log out</button>
     </aside>
@@ -50,6 +50,7 @@
               <span class="icon"><i class="fas fa-user-circle"></i></span>
             </a>
           </div>
+        </div>
       </header>
 
       <h1>Budget</h1>
@@ -58,6 +59,15 @@
   </div>
 
   <script>
+    // Example role check (you can replace this with your actual logic to get the logged-in user's role)
+    const userRole = "manager"; // Replace with actual user role (e.g., from session, API, etc.)
+
+    // Hide "Orders" and "Roles" menu items for managers
+    if (userRole === "manager") {
+      document.getElementById("ordersMenuItem").style.display = "none";
+      document.getElementById("rolesMenuItem").style.display = "none";
+    }
+
     // JavaScript to handle logout redirection
     document.getElementById('logout-btn').addEventListener('click', function() {
       window.location.href = 'index.html'; // Redirect to index.html
