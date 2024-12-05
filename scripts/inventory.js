@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             row.innerHTML = `
                 <td>${item.id}</td>
                 <td>${item.name}</td>
+                <td>${item.barcode}</td>
                 <td>${item.category}</td>
                 <td>${item.quantity}</td>
                 <td>${item.price.toFixed(2)}</td> <!-- Format the price to 2 decimal places -->
