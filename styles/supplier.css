@@ -163,6 +163,31 @@ td {
     color: #2c3e50;
 }
 
+/* Add some spacing and styling to the action buttons */
+#supplierTable .editBtn, 
+#supplierTable .deleteBtn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#supplierTable .editBtn:hover, 
+#supplierTable .deleteBtn:hover {
+    text-decoration: underline;
+}
+
+#supplierTable .deleteBtn {
+    color: #dc3545;
+}
+
+#supplierTable .deleteBtn:hover {
+    color: #c82333;
+}
+
 /* Responsive Styling */
 @media (max-width: 768px) {
     .sidebar {
