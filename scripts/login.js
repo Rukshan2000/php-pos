@@ -19,9 +19,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
         // Redirect based on user role
         if (user.role === "admin") {
-            window.location.href = "dashboard-admin.html";  // Admin dashboard
+            window.location.href = "dashboard.html";  // Admin dashboard
         } else if (user.role === "manager") {
-            window.location.href = "dashboard-manager.html";  // Manager dashboard
+            window.location.href = "dashboard.html";  // Manager dashboard
         }
     } else {
         document.getElementById('error-message').textContent = "Invalid username or password";
