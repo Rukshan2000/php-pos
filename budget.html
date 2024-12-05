@@ -27,7 +27,7 @@
         <li><a href="shipment.html"><i class="fas fa-shipping-fast"></i> Shipment & Purchase</a></li>
         <li><a href="roles.html"><i class="fas fa-user-cog"></i> Role Management</a></li>
       </ul>
-      <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log out</button>
+      <button id="logout-btn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log out</button>
     </aside>
 
     <!-- Main Content -->
@@ -54,5 +54,12 @@
       <p>Here you can manage the budget.</p>
     </main>
   </div>
+
+  <script>
+    // JavaScript to handle logout redirection
+    document.getElementById('logout-btn').addEventListener('click', function() {
+      window.location.href = 'index.html'; // Redirect to index.html
+    });
+  </script>
 </body>
 </html>
