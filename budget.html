@@ -59,14 +59,6 @@
   </div>
 
   <script>
-    // Example role check (you can replace this with your actual logic to get the logged-in user's role)
-    const userRole = "manager"; // Replace with actual user role (e.g., from session, API, etc.)
-
-    // Hide "Orders" and "Roles" menu items for managers
-    if (userRole === "manager") {
-      document.getElementById("ordersMenuItem").style.display = "none";
-      document.getElementById("rolesMenuItem").style.display = "none";
-    }
 
     // JavaScript to handle logout redirection
     document.getElementById('logout-btn').addEventListener('click', function() {
