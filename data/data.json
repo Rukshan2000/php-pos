@@ -1,0 +1,15 @@
+{
+    "sales": {
+      "todaySales": 5000,
+      "percentChange": 60
+    },
+    "orders": {
+      "totalOrders": 1000,
+      "percentChange": 90
+    },
+    "users": {
+      "totalUsers": 150,
+      "percentChange": 60
+    }
+  }
+  
