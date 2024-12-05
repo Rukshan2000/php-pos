@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Softer background */
+}
+
+.add-inventory-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 25px;
+    width: 80vw; /* Slightly smaller for modern look */
+    max-width: 1200px; /* Limit max width */
+    margin: 50px auto; /* Centered */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.add-inventory-form:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Elevated hover effect */
+}
+
+.add-inventory-form h2 {
+    font-size: 30px;
+    color: #34495e;
+    grid-column: span 2; /* Span full width */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 8px; /* Softer input corners */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-group input[type="file"] {
+    padding: 0;
+}
+
+/* Two-column layout adjustments */
+.form-group:nth-child(odd) {
+    grid-column: 1; /* Left column */
+}
+
+.form-group:nth-child(even) {
+    grid-column: 2; /* Right column */
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+    padding: 15px;
+}
+
+/* Modern Button Styles */
+.form-group button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    grid-column: span 2; /* Full width button */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-group button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.form-group button:active {
+    transform: translateY(0); /* Button returns to original position on click */
+}
+
+/* Responsive Grid Adjustments for Mobile */
+@media (max-width: 768px) {
+    .add-inventory-form {
+        grid-template-columns: 1fr; /* Switch to one column layout */
+        width: 95%;
+        padding: 20px;
+    }
+
+    .add-inventory-form h2 {
+        font-size: 24px;
+    }
+
+    .form-group {
+        grid-column: span 1; /* Single column */
+    }
+}
