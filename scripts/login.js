@@ -21,19 +21,19 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Redirect based on the user's role
         switch (user.role) {
             case "Supply Manager":
-                window.location.href = "supply_manager_dashboard.html";
+                window.location.href = "SupplyManager/supply_manager_dashboard.html";
                 break;
             case "Admin":
-                window.location.href = "admin_dashboard.html";
+                window.location.href = "dashboard.html";
                 break;
             case "Customer Relation Manager":
-                window.location.href = "customer_manager_dashboard.html";
+                window.location.href = "CustomerRelation/customer_manager_dashboard.html";
                 break;
             case "Finance Manager":
-                window.location.href = "finance_manager_dashboard.html";
+                window.location.href = "FinanceManager/finance_manager_dashboard.html";
                 break;
             case "Procurement Manager":
-                window.location.href = "procurement_manager_dashboard.html";
+                window.location.href = "ProcumentManager/procurement_manager_dashboard.html";
                 break;
             case "Cashier":
                 window.location.href = "Cashier/CashierDashboard.html";
